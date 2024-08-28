@@ -13,7 +13,6 @@ cd <!DOCTYPE html>
         const code = params.get('code');
 
         if (code) {
-            // Redirect back to the app using a custom URL scheme
             window.location.href = `com.example.dio_client_example://auth?code=${code}`;
         } else {
             document.body.innerHTML = '<h1>Error: No authorization code found</h1>';
