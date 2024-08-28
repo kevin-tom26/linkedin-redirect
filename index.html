@@ -13,7 +13,7 @@
         const state = urlParams.get('state');
 
         // Construct the custom URL scheme for your app
-        const redirectToApp = `com.example.dio_client_example://auth?code=${code}&state=${state}`;
+        const redirectToApp = `myapp://linkedin?code=${code}&state=${state}`;
 
         // Redirect to your app
         window.location.href = redirectToApp;
